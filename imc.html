@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+	
+		document.write("<br><br>");
+	}
+	
+	function mostra(frase) {
+	
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	function calculaImc(altura, peso) {
+	
+		var imc = peso / (altura * altura);
+		return imc;
+	// Poderia apagar as duas linhas acima e colocar return peso / (altura * altura)
+	}
+	
+	// Explicação: Você pede o cálculo do Imc e os dados, ele calcula, e depois te retorna
+	
+	var imcMarilia = calculaImc(1.60, 55);
+	var imcAmigo = calculaImc(1.72, 68);
+	// Poderia apagar as duas linhas acima e substituir por var totalImc = calculaImc(1.60, 55) + calculaImc(1.72, 68)
+	
+	mostra(imcMarilia);
+	mostra(imcAmigo);
+	
+</script>
